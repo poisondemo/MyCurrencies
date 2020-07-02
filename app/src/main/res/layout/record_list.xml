@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"  android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="#111"
+        android:divider="@drawable/space_divider_horizontal"
+        android:showDividers="middle">
+        <TextView
+            android:id="@+id/time"
+            android:text="12.3"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/forCode"
+            android:text="12.3"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/forAmount"
+            android:text="12.3"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/homCode"
+            android:text="12.3"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/homAmount"
+            android:text="12.3"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

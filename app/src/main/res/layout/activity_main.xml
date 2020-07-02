@@ -7,17 +7,34 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="20"
-        android:orientation="vertical">
+        android:layout_weight="10"
+        android:orientation="horizontal">
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="30"
             android:gravity="bottom"
-            android:text="Foreign Currency"
-            android:textColor="#ff22e9ff"/>
+            android:text="原币种"
+            android:textColor="#ff22e9ff" />
+        <Button
+            android:id="@+id/btn_invert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="上下交换"
+            android:textColor="#AAA"
+            android:background="#222"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="vertical">
         <Spinner
             android:id="@+id/spn_for"
             android:layout_width="fill_parent"
@@ -33,7 +50,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="15"
             android:gravity="bottom"
-            android:text="Enter foreign currency amount here:"
+            android:text="请输入原货币的金额:"
             android:textColor="#666"
             android:textSize="12sp"/>
     </LinearLayout>
@@ -67,9 +84,10 @@
         android:layout_marginRight="10dp"
         android:layout_weight="10"
         android:gravity="center"
-        android:text="Calculate"
+        android:text="计算"
         android:textColor="#AAA"
-        android:background="@drawable/button"/>
+        android:textSize="30sp"
+        android:background="@drawable/button1"/>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
@@ -82,7 +100,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="30"
             android:gravity="bottom"
-            android:text="Home Currency"
+            android:text="目标币种"
             android:textColor="#ff22e9ff"/>
         <Spinner
             android:id="@+id/spn_hom"
@@ -99,7 +117,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="15"
             android:gravity="bottom"
-            android:text="Calculated result in home currency:"
+            android:text="原币种和目标币种的转换结果:"
             android:textColor="#666"
             android:textSize="12sp"/>
     </LinearLayout>
@@ -119,6 +137,7 @@
             android:layout_marginRight="5dp"
             android:background="#333"
             android:gravity="center_vertical"
+            android:textColor="#FFF"
             android:textSize="30sp"
             android:typeface="normal"/>
     </LinearLayout>
